@@ -1,0 +1,25 @@
+body {
+	background-color: grey;
+}
+
+.cool {
+	visibility: visible;
+	height : 200px;
+	width : 200px;
+	/*float: left;*/
+	background-color: blue;
+	transition-delay: background-color 20s;
+	transition: background-color 2s;
+
+}
+
+.cool.red {
+	visibility: hidden;
+	height : 200px;
+	width : 200px;
+	/*float: right;*/
+	background-color: red;
+	transition-delay: background-color 20s;
+	transition: background-color 2s;
+	/*background-image: url('<img src="http://eskipaper.com/images/kitty-cat-1.jpg">'); */
+}
