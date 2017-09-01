@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,8 +11,9 @@
 </head>
 <body class="body-state1">
 <div class="left">
-	<div class="interface state1">
-		<h1>JS rocket Launch!</h1>
+	<div class="interface state1" id="state1">
+		<h1>JS rocket Launch!</h1> 
+			<!-- Set variable for function changeState to 2 -->
 			<a href="#" class="button"
 			onclick="changeState(2);">LAUNCH! </a>
 	</div>
@@ -31,6 +35,7 @@
 			onclick="changeState(1);">Try again.</a>
 	</div>
 </div>
+<!-- different divs for images to move in. -->
 	<div class="right">
 		<div class="rocket"></div>
 		<div class="ground"></div>

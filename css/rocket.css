@@ -1,7 +1,12 @@
+
+
+
+
+
 body {
 	font-family: 'helvetica', 'arial', 'sans-serif';
 }
-
+/* Verdeel pagina op in hoeveel delen je wilt*/
 .left {
 	background-color: aquamarine;
 	position:fixed;
@@ -10,12 +15,12 @@ body {
 	top: 0;
 	left: 0;
 }
-
+/*Global aanpak verschillende aspecten .left*/
 .interface {
 	text-align: center;
 	padding: 20px;
 }
-
+/*Target <a> met class 'button'*/
 a.button {
 	display: inline-block;
 	background-color: white;
@@ -37,7 +42,8 @@ a.button1 {
 	text-decoration: none;
 	transition: color 300ms;
 }
-
+/*Target <a> met class 'button'
+verander kleur bij aanwijzen met cursor */
 a.button:hover {
 	background-color: red;
 }
@@ -46,7 +52,7 @@ a.button1:hover {
 }
 
 .rocket {
-	position: absolute;
+	position: absolute; 
 	left: 50%;
 	bottom: -13px;
 	width: 143px;
@@ -56,6 +62,8 @@ a.button1:hover {
 	transition: bottom 8000ms;
 }
 /* rocket bg image*/
+
+/*Target body wanneer deze in state-2 staat*/
 body.body-state2 .rocket {
 	background-image: url('../img/rocket-state2.gif');
 }
@@ -63,6 +71,7 @@ body.body-state3 .rocket,
 body.body-state4 .rocket {
 	background-image: url('../img/rocket-state3.gif');
 }
+/*Verander dimensies om bij de afbeelding te passen*/
 body.body-state5 .rocket {
 	background-image: url('../img/boom.png');
 	width: 209px;
@@ -70,15 +79,18 @@ body.body-state5 .rocket {
 	margin-left: -104.5;
 }
 
-
+/*body-state 1 raket direct aan de grond*/
 body.body-state1 .rocket {
 	transition: none;
 }
 
+/*body-state3/4 raket naar 1000px
+werkt in combinatie met .rocket's transition */
 body.body-state3 .rocket,
 body.body-state4 .rocket {
 	bottom: 1000px;
 }
+/*#state1*/
 .state1,
 .state2,
 .state3,
